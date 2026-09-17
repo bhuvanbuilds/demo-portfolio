@@ -3,6 +3,8 @@
 	--blue: #7692ff;
 	--light-blue: #abd2fa;
 	--white: #ffffff;
+	--font-body: Arial, sans-serif;
+	--font-heading: Georgia, serif;
 }
 
 * {
@@ -17,7 +19,7 @@ body {
 	margin: 0;
 	background: var(--white);
 	color: var(--navy);
-	font-family: Arial, sans-serif;
+	font-family: var(--font-body);
 	line-height: 1.6;
 }
 
@@ -97,6 +99,16 @@ header nav a:last-child:focus-visible {
 	padding: 5rem 0;
 }
 
+#home header {
+	width: auto;
+	max-width: 760px;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+
 #home div {
 	max-width: 760px;
 }
@@ -115,6 +127,7 @@ header nav a:last-child:focus-visible {
 
 #home h1 {
 	margin: 0;
+	font-family: var(--font-heading);
 	font-size: 6rem;
 	line-height: 1;
 }
@@ -197,15 +210,39 @@ header nav a:last-child:focus-visible {
 #skills h2,
 #contact h2 {
 	margin: 0;
+	font-family: var(--font-heading);
 	font-size: 2.5rem;
 }
 
-#about div p,
-#work div p,
-#skills div p,
-#contact div p {
+#about header p,
+#work header p,
+#skills header p,
+#contact header p {
 	margin-top: 0.25rem;
 	color: var(--blue);
+}
+
+#about header,
+#work header,
+#skills header,
+#contact header {
+	width: auto;
+	max-width: none;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+
+#work article header {
+	width: auto;
+	max-width: none;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
 }
 
 #about p {
@@ -246,6 +283,15 @@ header nav a:last-child:focus-visible {
 	padding: 0.25rem 0.6rem;
 	border: 1px solid var(--light-blue);
 	font-size: 0.85rem;
+}
+
+#work article footer {
+	width: auto;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
 }
 
 #work article a {
