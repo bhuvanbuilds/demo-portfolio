@@ -3,6 +3,8 @@
 	--blue: #7692ff;
 	--light-blue: #abd2fa;
 	--white: #ffffff;
+	--font-body: Arial, sans-serif;
+	--font-heading: Georgia, serif;
 }
 
 * {
@@ -17,7 +19,7 @@ body {
 	margin: 0;
 	background: var(--white);
 	color: var(--navy);
-	font-family: Arial, sans-serif;
+	font-family: var(--font-body);
 	line-height: 1.6;
 }
 
@@ -115,6 +117,7 @@ header nav a:last-child:focus-visible {
 
 #home h1 {
 	margin: 0;
+	font-family: var(--font-heading);
 	font-size: 6rem;
 	line-height: 1;
 }
@@ -197,6 +200,7 @@ header nav a:last-child:focus-visible {
 #skills h2,
 #contact h2 {
 	margin: 0;
+	font-family: var(--font-heading);
 	font-size: 2.5rem;
 }
 
